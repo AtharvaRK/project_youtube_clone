@@ -27,4 +27,4 @@ jobs:
     steps:    
     - uses: actions/checkout@v4
     - name: Docker Push 
-      run: docker push arkyy21/youtube-clone:${{ github.run_id }}
+      run: docker images
