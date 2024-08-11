@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: myyoudep
+  name: myyoudep
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my_you_dep
+  strategy: 
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: my_you_dep
+    spec:
+      containers:
+      - image: arkyy21/youtube-clone:10337999762
+        name: youtube-clone
+        ports:
+        - containerPort: 3000
