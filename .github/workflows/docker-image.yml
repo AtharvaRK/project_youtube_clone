@@ -23,7 +23,7 @@ jobs:
     - name: Docker Login
       uses: docker/login-action@v3.3.0
       with:
-        registry: https://hub.docker.com/v1
+        registry: https://hub.docker.com/v1/
     # Username used to log against the Docker registry
         username: arkyy21
     # Password or personal access token used to log against the Docker registry
